@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  cyber-threat-hub:
+    build: .
+    container_name: cyber-threat-hub
+    ports:
+      - "3002:3001"
+    volumes:
+      # Mantém a base de dados SQLite persistente
+      - ./backend/src/database:/app/backend/src/database
+      # Mantém o arquivo .env persistente caso seja atualizado pela interface do painel
+      - ./backend/.env:/app/backend/.env
+    restart: unless-stopped
