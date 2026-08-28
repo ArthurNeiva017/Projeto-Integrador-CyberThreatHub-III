@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dashboardCards.innerHTML = `
                 <div class="stat-card">
                     <div class="stat-card-header">
-                        <span class="stat-card-title"style="text-transform:uppercase; text-shadow: 1px 1px 2px rgba(255, 3, 3, 1);"><b>Contas Vazadas</b></span>
+                        <span class="stat-card-title"style="text-transform:uppercase; text-shadow: 1px 1px 2px #4EEA74;"><b>Contas Vazadas</b></span>
                         <div class="stat-card-icon" style="background:transparent; border:none;"></div>
                     </div>
                     <div class="stat-card-value">${formatNumber(metrics.pwnedCount || 13500000000)}</div>
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="stat-card">
                     <div class="stat-card-header">
-                        <span class="stat-card-title" style="text-transform:uppercase; text-shadow: 1px 1px 2px rgba(250, 16, 16, 1);"><b>Grupos Ativos</b> <i class="fa-solid fa-users" style="color: var(--accent); margin-left:4px; font-size: 1rem"></i></span>
+                        <span class="stat-card-title" style="text-transform:uppercase; text-shadow: 1px 1px 2px #4EEA74;"><b>Grupos Ativos</b> <i class="fa-solid fa-users" style="color: var(--accent); margin-left:4px; font-size: 1rem"></i></span>
                         <div class="stat-card-icon" style="background:transparent; border:none;"></div>
                     </div>
                     <div class="stat-card-value">${(metrics.activeGangs || 0).toLocaleString()}</div>
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="stat-card">
                     <div class="stat-card-header">
-                        <span class="stat-card-title" style="text-transform:uppercase; text-shadow: 1px 1px 2px rgba(255, 5, 0, 1);"><b>Total de Ameaças</b> <i class="fa-solid fa-triangle-exclamation" style="color:var(--accent); margin-left:4px; font-size:1rem"></i></span>
+                        <span class="stat-card-title" style="text-transform:uppercase; text-shadow: 1px 1px 2px #4EEA74;"><b>Total de Ameaças</b> <i class="fa-solid fa-triangle-exclamation" style="color:var(--accent); margin-left:4px; font-size:1rem"></i></span>
                         <div class="stat-card-icon" style="background:transparent; border:none;"></div>
                     </div>
                     <div class="stat-card-value">${(metrics.threats || 0).toLocaleString()}</div>
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="stat-card">
                     <div class="stat-card-header">
-                        <span class="stat-card-title" style="text-transform:uppercase; text-shadow: 1px 1px 2px rgba(255, 5, 0, 1);"><b>Vulnerabilidades</b> <i class="fa-solid fa-shield-halved" style="color:var(--accent); margin-left:4px; font-size: 1rem"></i></span>
+                        <span class="stat-card-title" style="text-transform:uppercase; text-shadow: 1px 1px 2px #4EEA74;"><b>Vulnerabilidades</b> <i class="fa-solid fa-shield-halved" style="color:var(--accent); margin-left:4px; font-size: 1rem"></i></span>
                         <div class="stat-card-icon" style="background:transparent; border:none;"></div>
                     </div>
                     <div class="stat-card-value">${(metrics.vulnerabilities || 0).toLocaleString()}</div>
