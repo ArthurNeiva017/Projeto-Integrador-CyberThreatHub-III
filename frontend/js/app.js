@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 labels: ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'],
                 datasets: [{
                     data: doughnutData, // Valores vindos do backend de banco de dados
-                    backgroundColor: ['#DC2626', '#F97316', '#EAB308', '#22C55E'], // Cores seguindo o padrão
+                    backgroundColor: ['#4B2C91', '#D70B25', '#EAB308', '#22C55E'], // Cores seguindo o padrão
                     borderWidth: 1,
                     borderColor: '#1c1e1d' // Cores de borda == background do panel
                 }]
